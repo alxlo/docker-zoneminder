@@ -1,13 +1,11 @@
-### Zoneminder 1.29
+### Zoneminder 1.29 for Raspberry Pi
 
-#### Install On unRaid:
-
-On unRaid, install from the Community Repositories and enter the app folder location and the port for the webUI.
+* cloned from the [aptalca docker image](https://github.com/aptalca/docker-zoneminder) and modified accorrding to [mrLitter's post](https://forums.zoneminder.com/viewtopic.php?t=24683)
 
 
-#### Install On Other Platforms (like Ubuntu or Synology 5.2 DSM, etc.):
+#### Install On Your Raspberry Pi:
 
-On other platforms, you can run this docker with the following command:
+run this docker with the following command:
 
 `docker run -d --name="Zoneminder-1.29" --privileged=true -v /path/to/config:/config:rw -v /etc/localtime:/etc/localtime:ro -p 80:80 aptalca/zoneminder-1.29`
 
